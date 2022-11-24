@@ -1,15 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__main main-block">
+				<div class="main-block__container">
+					<div class="main-block__body body-main-block">
+						<div class="body-main-block__content content-main-block">
+							<div class="content-main-block__body">
+								<div class="content-main-block__sub-title">RESIDENTIAL & OFFICE SPACES</div>
+								<h1 class="content-main-block__title">Smart Living Style for Smart People</h1>
+								<div class="content-main-block__text">
+									Much did had call new drew that kept. Limits expect wonder law she. Now has you views woman
+									noisy match money rooms.
+								</div>
+							</div>
+							<form class="content-main-block__form form-main-block _icon-home" action="#">
+								<input placeholder="Enter Zipcode to search properties" type="text"
+									class="form-main-block__input">
+								<button type="submit" class="form-main-block__button">Search Now!</button>
+							</form>
+						</div>
+						<div class="body-main-block__slider slider-main-block swiper">
+							<div class="slider-main-block__wrapper swiper-wrapper">
+								<div class="slider-main-block__slide swiper-slide">
+									<img src="@img/main/slider01.jpg" alt="Slider image">
+								</div>
+								<div class="slider-main-block__slide swiper-slide">
+									<img src="@img/main/slider02.jpg" alt="Slider image">
+								</div>
+								<div class="slider-main-block__slide swiper-slide">
+									<img src="@img/main/slider01.jpg" alt="Slider image">
+								</div>
+							</div>
+							<div class="slider-main-block__arrow swiper-button-prev">
+								<img src="@img/icons/arrslider.svg" alt="Arrow">
+							</div>
+							<div class="slider-main-block__arrow swiper-button-next">
+								<img src="@img/icons/arrslider.svg" alt="Arrow">
+							</div>
+							<ul class="main-block__social social-block">
+								<li class="social-block__item">
+									<a class="social-block__link _icon-facebook" href="#"></a>
+								</li>
+								<li class="social-block__item">
+									<a class="social-block__link _icon-insta" href="#"></a>
+								</li>
+								<li class="social-block__item">
+									<a class="social-block__link _icon-tvitter" href="#"></a>
+								</li>
+								<li class="social-block__item">
+									<a class="social-block__link _icon-linkedin" href="#"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="main-block__partners partners-main-block">
+						<div class="partners-main-block__label">Our Amazing Partners</div>
+						<ul class="partners-main-block__items">
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-buzz"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-chase"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-microsoft"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-gucc"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-airbnb"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-uber"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
