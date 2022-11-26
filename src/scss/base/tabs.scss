@@ -11,14 +11,31 @@
 		font-size: rem(19);
 		line-height: math.div(26, 19);
 		color: #000000;
-		transition: color 0.3s ease 0s;
+		transition: color 0.5s, width 0.5s ease 0s;
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: rem(2);
+			background-color: #f85a47;
+			transition: width 0.5s ease 0s;
+		}
+
 		&._tab-active {
-			font-weight: 600;
 			font-size: rem(19);
 			line-height: math.div(26, 19);
-			border-bottom: 1px solid #f85a47;
 			color: #f85a47;
-			transition: color 0.3s ease 0s;
+			text-shadow: rem(1) 0 rem(1) #f85a47;
+			position: relative;
+			transition: color 0.5s ease 0s;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				transition: width 0.5s ease 0s;
+			}
 		}
 	}
 	// .tabs__content

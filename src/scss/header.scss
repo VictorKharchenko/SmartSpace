@@ -51,9 +51,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		column-gap: rem(46);
-		row-gap: rem(5);
+		row-gap: rem(15);
 		@media (max-width: $tablet) {
-			justify-content: center;
+			justify-content: space-evenly;
 		}
 		@media (max-width: $mobileSmall) {
 			flex-direction: column;
