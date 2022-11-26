@@ -2,20 +2,27 @@
 	// .tabs__navigation
 	&__navigation {
 		display: flex;
+		gap: rem(50);
 	}
+
 	// .tabs__title
 	&__title {
-		border: 1px solid #eee;
-		padding: rem(10) rem(15);
-		border-radius: rem(5);
+		padding-bottom: rem(10);
+		font-size: rem(19);
+		line-height: math.div(26, 19);
+		color: #000000;
+		transition: color 0.3s ease 0s;
 		&._tab-active {
-			border: 1px solid #000;
+			font-weight: 600;
+			font-size: rem(19);
+			line-height: math.div(26, 19);
+			border-bottom: 1px solid #f85a47;
+			color: #f85a47;
+			transition: color 0.3s ease 0s;
 		}
 	}
 	// .tabs__content
 	&__content {
-		border: 1px solid #eee;
-		padding: rem(10) rem(15);
 	}
 	// .tabs__body
 	&__body {

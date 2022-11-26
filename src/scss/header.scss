@@ -4,9 +4,9 @@
 	width: 100%;
 	left: 0;
 	top: 0;
-	/* background-color: rgba(255, 255, 255, 0.75); */
 	z-index: 50;
-	transition: all 0.3s ease 0s;
+	transition: background-color 0.3s ease 0s;
+
 	// .header__container
 
 	&__container {
@@ -17,6 +17,7 @@
 		align-items: center;
 		padding-top: rem(10);
 		padding-bottom: rem(10);
+		transition: min-height 0.3s ease 0s;
 	}
 
 	// .header__logo
@@ -33,7 +34,16 @@
 
 	&__menu {
 	}
+	&._header-scroll {
+		background-color: rgba(255, 255, 255, 0.85);
+		transition: background-color 0.3s ease 0s;
+		.header__container {
+			min-height: rem(70);
+			transition: min-height 0.3s ease 0s;
+		}
+	}
 }
+
 .menu {
 	// .menu__list
 
@@ -108,7 +118,6 @@
 		}
 	}
 }
-
 //====================================================================================================
 
 //Burger

@@ -46,7 +46,7 @@ flsFunctions.menuInit();
 Документація: https://template.fls.guru/template-docs/modul-taby.html
 Сніппет (HTML): tabs
 */
-// flsFunctions.tabs();
+flsFunctions.tabs();
 
 /*
 Модуль "показати ще"
@@ -184,7 +184,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 
 // Функціонал додавання класів до хедеру під час прокручування
 // Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
-// flsScroll.headerScroll();
+flsScroll.headerScroll();
 
 // Функціонал липкого блоку
 // flsScroll.stickyBlock();

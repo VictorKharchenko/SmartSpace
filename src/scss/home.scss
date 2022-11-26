@@ -428,3 +428,151 @@
 	&_icon-hand {
 	}
 }
+//========================================================================================================================================================
+.deals {
+	@include adaptiveValue("padding-top", 110, 20);
+	@include adaptiveValue("padding-bottom", 110, 20);
+	// .deals__container
+
+	&__container {
+	}
+
+	// .deals__header
+
+	&__header {
+		@include adaptiveValue("margin-bottom", 50, 15);
+	}
+
+	// .deals__tabs
+
+	&__tabs {
+	}
+}
+.header-deals {
+	display: flex;
+	gap: rem(20);
+	align-items: flex-start;
+	@media (max-width: $mobile) {
+		flex-direction: column;
+		align-items: center;
+	}
+	// .header-deals__content
+
+	&__content {
+		flex: 1 1 auto;
+	}
+
+	// .header-deals__title
+
+	&__title {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 15, 5);
+		}
+		@media (max-width: $mobile) {
+			text-align: center;
+		}
+	}
+
+	// .header-deals__text
+
+	&__text {
+		max-width: rem(470);
+		line-height: math.div(24, 16);
+		color: #000000;
+		@media (max-width: $mobile) {
+			text-align: center;
+		}
+	}
+
+	// .header-deals__link
+
+	&__link {
+	}
+}
+.tabs {
+	// .tabs__navigation
+
+	&__navigation {
+		@include adaptiveValue("margin-bottom", 57, 15);
+		@include adaptiveValue("gap", 50, 10);
+		display: flex;
+		column-gap: rem(50);
+		row-gap: rem(10);
+		flex-wrap: wrap;
+		@media (max-width: $mobile) {
+			justify-content: center;
+		}
+	}
+
+	// .tabs__title
+
+	&__title {
+	}
+
+	// .tabs__content
+
+	&__content {
+	}
+
+	// .tabs__body
+
+	&__body {
+	}
+}
+.body-tabs {
+	// .body-tabs__items
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		@include adaptiveValue("gap", 30, 5);
+		@media (max-width: $pc) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: $mobile) {
+			grid-template-columns: repeat(1, 1fr);
+			justify-items: center;
+		}
+	}
+
+	// .body-tabs__item
+
+	&__item {
+		display: inline-block;
+		max-width: rem(370);
+		position: relative;
+		@media (max-width: $mobile) {
+		}
+	}
+
+	// .body-tabs__options
+
+	&__options {
+		position: absolute;
+		display: flex;
+		gap: rem(6);
+		top: rem(14);
+		left: rem(14);
+	}
+
+	// .body-tabs__option
+
+	&__option {
+		font-size: rem(12);
+		line-height: math.div(15, 12);
+		color: #ffffff;
+		padding: rem(6) rem(12);
+		background: rgba(0, 0, 0, 0.4);
+		border: 1px solid #ffffff;
+		border-radius: 5px;
+	}
+
+	// .body-tabs__image
+
+	&__image {
+		width: 100%;
+		img {
+			max-width: 100%;
+		}
+	}
+}
