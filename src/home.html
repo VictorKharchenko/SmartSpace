@@ -1,15 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="page__main main-block">
+				<div class="main-block__container">
+					<div class="main-block__body body-main-block">
+						<div class="body-main-block__content content-main-block">
+							<div class="content-main-block__body">
+								<div class="content-main-block__sub-title">RESIDENTIAL & OFFICE SPACES</div>
+								<h1 class="content-main-block__title">Smart Living Style for Smart People</h1>
+								<div class="content-main-block__text">
+									Much did had call new drew that kept. Limits expect wonder law she. Now has you views woman
+									noisy match money rooms.
+								</div>
+							</div>
+							<form class="content-main-block__form form-main-block _icon-home" action="#">
+								<input placeholder="Enter Zipcode to search properties" type="text"
+									class="form-main-block__input">
+								<button type="submit" class="form-main-block__button">Search Now!</button>
+							</form>
+						</div>
+						<div class="body-main-block__slider slider-main-block swiper">
+							<div class="slider-main-block__wrapper swiper-wrapper">
+								<div class="slider-main-block__slide swiper-slide">
+									<img src="@img/main/slider01.jpg" alt="Slider image">
+								</div>
+								<div class="slider-main-block__slide swiper-slide">
+									<img src="@img/main/slider02.jpg" alt="Slider image">
+								</div>
+								<div class="slider-main-block__slide swiper-slide">
+									<img src="@img/main/slider01.jpg" alt="Slider image">
+								</div>
+							</div>
+							<div class="slider-main-block__arrow swiper-button-prev">
+								<img src="@img/icons/arrslider.svg" alt="Arrow">
+							</div>
+							<div class="slider-main-block__arrow swiper-button-next">
+								<img src="@img/icons/arrslider.svg" alt="Arrow">
+							</div>
+							<ul class="body-main-block__social social-block">
+								<li class="social-block__item">
+									<a class="social-block__link _icon-facebook" href="#"></a>
+								</li>
+								<li class="social-block__item">
+									<a class="social-block__link _icon-insta" href="#"></a>
+								</li>
+								<li class="social-block__item">
+									<a class="social-block__link _icon-tvitter" href="#"></a>
+								</li>
+								<li class="social-block__item">
+									<a class="social-block__link _icon-linkedin" href="#"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="main-block__partners partners-main-block">
+						<div class="partners-main-block__label">Our Amazing Partners</div>
+						<ul class="partners-main-block__items">
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-buzz"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-chase"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-microsoft"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-gucc"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-airbnb"></a>
+							</li>
+							<li class="partners-main-block__item">
+								<a href="#" class="partners-main-block__link _icon-uber"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__how how">
+				<div class="how__container">
+					<h2 class="how__title title title--center">How it works?</h2>
+					<ul class="how__items">
+						<li class="how__item item-how item-how--search">
+							<div class="item-how__icon item-how__icon--search _icon-search"></div>
+							<div class="item-how__title">Research Suburbs</div>
+							<div class="item-how__text">Wonder twenty hunted and put income set desire expect. Am cottage
+								calling.</div>
+						</li>
+						<li class="how__item item-how item-how--whale">
+							<div class="item-how__icon item-how__icon--whale _icon-whale"></div>
+							<div class="item-how__title">Instant Valuation</div>
+							<div class="item-how__text">Conveying or northward offending admitting perfectly my. Colonel gravit
+								and moonlight.</div>
+						</li>
+						<li class="how__item item-how item-how--hand">
+							<div class="item-how__icon item-how__icon--hand _icon-hand"></div>
+							<div class="item-how__title">Track Property</div>
+							<div class="item-how__text">Moderate children at of outweigh it. Unsatiable it considered
+								invitation he travelling insensible.</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="page__deals deals">
+				<div class="deals__container">
+					<div class="deals__header header-deals">
+						<div class="header-deals__content">
+							<h2 class="header-deals__title title">Best Real Estate Deals</h2>
+							<div class="header-deals__text">
+								Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire
+								expect.
+							</div>
+						</div>
+						<a href="#" class="header-deals__link button">View All Property</a>
+					</div>
+					<div data-tabs data-tabs-animate="1000" class="deals__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title">Residential Property</button>
+							<button type="button" class="tabs__title">Commercial Property</button>
+							<button type="button" class="tabs__title">Agriculture Property</button>
+							<button type="button" class="tabs__title">Industrial Property</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body body-tabs">
+								<ul class="body-tabs__items">
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<a href="#" class="body-tabs__option">3D</a>
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/01.jpg" alt="Image">
+										</a>
+									</li>
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<a href="#" class="body-tabs__option">3D</a>
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/02.jpg" alt="Image">
+										</a>
+									</li>
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<!-- <a href="#" class="body-tabs__option">3D</a> -->
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/03.jpg" alt="Image">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body body-tabs">
+								<ul class="body-tabs__items">
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<a href="#" class="body-tabs__option">3D</a>
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/01.jpg" alt="Image">
+										</a>
+									</li>
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<!-- <a href="#" class="body-tabs__option">3D</a> -->
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/03.jpg" alt="Image">
+										</a>
+									</li>
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<a href="#" class="body-tabs__option">3D</a>
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/02.jpg" alt="Image">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body body-tabs">
+								<ul class="body-tabs__items">
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<a href="#" class="body-tabs__option">3D</a>
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/02.jpg" alt="Image">
+										</a>
+									</li>
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<!-- <a href="#" class="body-tabs__option">3D</a> -->
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/03.jpg" alt="Image">
+										</a>
+									</li>
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<a href="#" class="body-tabs__option">3D</a>
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/01.jpg" alt="Image">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body body-tabs">
+								<ul class="body-tabs__items">
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<!-- <a href="#" class="body-tabs__option">3D</a> -->
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/03.jpg" alt="Image">
+										</a>
+									</li>
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<a href="#" class="body-tabs__option">3D</a>
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/01.jpg" alt="Image">
+										</a>
+									</li>
+									<li class="body-tabs__item">
+										<div class="body-tabs__options">
+											<a href="#" class="body-tabs__option">Featured</a>
+											<a href="#" class="body-tabs__option">3D</a>
+										</div>
+										<a href="#" class="body-tabs__image">
+											<img src="@img/deals/02.jpg" alt="Image">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__featured featured">
+				<div class="featured__container">
+					<h2 class="featured__title title title--center">Featured Listing of the Week</h2>
+					<div class="featured__body">
+						<div class="featured__images images-featured">
+							<div class="images-featured__item">
+								<img src="@img/featured/01.jpg" alt="Featured">
+							</div>
+							<div class="images-featured__item images-featured__item--mini">
+								<img src="@img/featured/02.jpg" alt="Featured">
+							</div>
+						</div>
+						<div class="featured__content content-featured">
+							<h3 class="content-featured__title">The and collecting for the motionless difficulty son.</h3>
+							<div class="content-featured__text">
+								<p>Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat
+									smiling add but difficult situations.</p>
+							</div>
+							<ul class="content-featured__options options-content-featured">
+								<li class="options-content-featured__item">
+									<div class="options-content-featured__label">Budget</div>
+									<div class="options-content-featured__value">Confidential</div>
+								</li>
+								<li class="options-content-featured__item">
+									<div class="options-content-featured__label">Size</div>
+									<div class="options-content-featured__value">1200 m2</div>
+								</li>
+								<li class="options-content-featured__item">
+									<div class="options-content-featured__label">Type</div>
+									<div class="options-content-featured__value">Office</div>
+								</li>
+								<li class="options-content-featured__item">
+									<div class="options-content-featured__label">Status</div>
+									<div class="options-content-featured__value">Done</div>
+								</li>
+								<li class="options-content-featured__item">
+									<div class="options-content-featured__label">Location</div>
+									<div class="options-content-featured__value">Switzerland</div>
+								</li>
+								<li class="options-content-featured__item">
+									<div class="options-content-featured__label">Flat</div>
+									<div class="options-content-featured__value">8 Room</div>
+								</li>
+							</ul>
+							<a href="" class="content-featured__link button">YES! I WANT BOOK “OFFICE PACKAGE”</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__reviews reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title">Loved by businesses, and individuals across the globe.</h2>
+					<div class="reviews__items">
+						<a href="#" class="reviews__item item-reviews">
+							<div class="item-reviews__raiting rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="item-reviews__text">
+								<p>Moderate children at of outweigh it. Unsatiable it considered invitation he travelling
+									insensible. Consulted admitting oh mr up as described.</p>
+							</div>
+							<div class="item-reviews__author author-item-reviews">
+								<div class="author-item-reviews__avatar">
+									<img src="@img/reviews/author/jane.jpg" alt="Jane">
+								</div>
+								<div class="author-item-reviews__body">
+									<div class="author-item-reviews__name">Jane Cooper</div>
+									<div class="author-item-reviews__location">Los Angeles, CA</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="reviews__item item-reviews">
+							<div class="item-reviews__raiting rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="item-reviews__text">
+								<p>Moderate children at of outweigh it. Unsatiable it considered invitation he travelling
+									insensible. Consulted admitting oh mr up as described.</p>
+							</div>
+							<div class="item-reviews__author author-item-reviews">
+								<div class="author-item-reviews__avatar">
+									<img src="@img/reviews/author/robert.jpg" alt="Robert">
+								</div>
+								<div class="author-item-reviews__body">
+									<div class="author-item-reviews__name">Jane Cooper</div>
+									<div class="author-item-reviews__location">Los Angeles, CA</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="reviews__item item-reviews">
+							<div class="item-reviews__raiting rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="item-reviews__text">
+								<p>Moderate children at of outweigh it. Unsatiable it considered invitation he travelling
+									insensible. Consulted admitting oh mr up as described.</p>
+							</div>
+							<div class="item-reviews__author author-item-reviews">
+								<div class="author-item-reviews__avatar">
+									<img src="@img/reviews/author/leslie.jpg" alt="Leslie">
+								</div>
+								<div class="author-item-reviews__body">
+									<div class="author-item-reviews__name">Jane Cooper</div>
+									<div class="author-item-reviews__location">Los Angeles, CA</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="reviews__footer footer-reviews">
+						<div class="footer-reviews__partners partners-footer-reviews">
+							<div class="partners-footer-reviews__item">
+								<a href="#" class="partners-footer-reviews__icon _icon-airbnb"></a>
+							</div>
+							<div class="partners-footer-reviews__item">
+								<a href="#" class="partners-footer-reviews__icon _icon-cisco"></a>
+							</div>
+							<div class="partners-footer-reviews__item">
+								<a href="#" class="partners-footer-reviews__icon _icon-ebay"></a>
+							</div>
+							<div class="partners-footer-reviews__item">
+								<a href="#" class="partners-footer-reviews__icon _icon-uber"></a>
+							</div>
+							<div class="partners-footer-reviews__item">
+								<a href="#" class="partners-footer-reviews__icon _icon-microsoft"></a>
+							</div>
+						</div>
+						<div class="footer-reviews__info">
+							Give us a Call 1-888-111-2222 and we can set you up, or <a href="#"
+								class="footer-reviews__link">check our pricing plans</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
