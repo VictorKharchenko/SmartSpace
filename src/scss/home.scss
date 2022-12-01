@@ -258,6 +258,7 @@
 }
 .social-block {
 	position: absolute;
+	text-align: center;
 	right: rem(-80);
 	top: 45%;
 	@media (max-width: em(1399.98)) {
@@ -964,3 +965,111 @@
 	&_icon-microsoft {
 	}
 }
+//========================================================================================================================================================
+.subscribe {
+	@include adaptiveValue("padding-bottom", 110, 20);
+
+	// .subscribe__container
+
+	&__container {
+	}
+
+	// .subscribe__header
+
+	&__header {
+		text-align: center;
+	}
+
+	// .subscribe__title
+
+	&__title {
+		margin-bottom: rem(11);
+		letter-spacing: 0.02em;
+	}
+
+	// .subscribe__sub-title
+
+	&__sub-title {
+		font-weight: 700;
+		@include adaptiveValue("font-size", 23, 16);
+		line-height: math.div(33, 23);
+		letter-spacing: -0.02em;
+		color: #31353b;
+		@include adaptiveValue("margin-bottom", 34, 15);
+	}
+
+	// .subscribe__form
+
+	&__form {
+		max-width: rem(686);
+		margin: 0 auto;
+	}
+}
+.form-subscribe {
+	display: flex;
+	padding: rem(26) rem(30);
+	gap: rem(15);
+	background: #ffffff;
+	transition: box-shadow 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			box-shadow: 0px 163px 80px rgba(0, 0, 0, 0.04), 0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704),
+				0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963), 0px 32.6px 13px rgba(0, 0, 0, 0.02),
+				0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037), 0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963);
+			transition: box-shadow 0.3s ease 0s;
+		}
+	}
+
+	@media (max-width: $mobileSmall) {
+		flex-direction: column;
+		row-gap: rem(15);
+		padding: rem(0);
+	}
+	// .form-subscribe__content
+
+	&__content {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .form-subscribe__label
+
+	&__label {
+		display: block;
+		margin-bottom: rem(11);
+		font-weight: 500;
+		font-size: rem(17);
+		line-height: math.div(25, 17);
+		letter-spacing: 0.02em;
+		color: #31353b;
+		opacity: 0.2;
+	}
+
+	// .form-subscribe__input
+
+	&__input {
+		font-weight: 700;
+		flex: 1 1 auto;
+		width: 100%;
+		font-size: rem(20);
+		padding: rem(5) rem(10);
+		@media (max-width: $mobileSmall) {
+			padding: rem(5) rem(0);
+		}
+	}
+
+	// .form-subscribe__button
+
+	&__button {
+		width: rem(167);
+		border-radius: 0;
+		@include adaptiveValue("font-size", 18, 14);
+		letter-spacing: 0.02rem;
+		@media (max-width: $mobileSmall) {
+			width: 100%;
+			box-shadow: none;
+		}
+	}
+}
+//========================================================================================================================================================
